@@ -1,0 +1,61 @@
+.hero-book {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0c0c0c;
+}
+
+/* container */
+
+.book-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 2000px;
+}
+
+/* book */
+
+.book {
+  position: relative;
+  width: 80%; /* IMPORTANT */
+}
+
+/* inside page */
+
+.inside-page {
+  width: 100%;
+  display: block;
+}
+
+/* cover */
+
+.cover-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform-origin: left;
+  transition: transform 1s ease;
+  cursor: pointer;
+}
+
+.cover-page.open {
+  transform: rotateY(-160deg);
+}
+
+/* back button */
+
+.back-btn {
+  position: absolute;
+  top: 16px;
+  left: 108px;
+  padding: 8px 14px;
+  font-size: 18px;
+  border: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}

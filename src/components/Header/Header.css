@@ -1,0 +1,31 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.container {
+  /* max-width: 1200px; */
+  margin: auto;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.nav a {
+  color: #7c7c7c;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: white;
+}
