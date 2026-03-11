@@ -19,7 +19,7 @@
 
 .book {
   position: relative;
-  width: 80%; /* IMPORTANT */
+  width: 90%; /* IMPORTANT */
 }
 
 /* inside page */
@@ -58,4 +58,74 @@
   color: white;
   border-radius: 6px;
   cursor: pointer;
+}
+
+/* .book {
+  position: relative;
+  width: 900px;
+} */
+
+/* inside page image */
+
+.inside-page {
+  width: 100%;
+  display: block;
+}
+
+/* hero overlay */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8%;
+  padding-right: 8%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+/* cover */
+
+.cover-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform-origin: left;
+  transition: transform 1s ease;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.cover-page.open {
+  transform: rotateY(-160deg);
+}
+
+/* back button */
+
+.back-btn {
+  position: absolute;
+  top: 5%;
+  left: 11%;
+  z-index: 4;
+
+  opacity: 0;
+  transform: translateX(-10px);
+  animation: backButtonAppear 0.5s ease forwards;
+}
+
+/* animation */
+
+@keyframes backButtonAppear {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

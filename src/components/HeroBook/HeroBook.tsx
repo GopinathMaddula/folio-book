@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./HeroBook.css";
 
 import cover from "../../assets/cover.png";
-import inside from "../../assets/blank.png";
+import inside from "../../assets/inside-page.png";
+import Hero from "../Hero/Hero";
 
 const HeroBook: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -11,7 +12,6 @@ const HeroBook: React.FC = () => {
   const handleOpen = () => {
     setOpen(true);
 
-    // wait for animation to finish
     setTimeout(() => {
       setShowBack(true);
     }, 1000);
@@ -26,8 +26,15 @@ const HeroBook: React.FC = () => {
     <section className="hero-book">
       <div className="book-container">
         <div className="book">
+          {/* OPENING PAGE IMAGE */}
           <img src={inside} alt="inside" className="inside-page" />
 
+          {/* HERO CONTENT OVERLAY */}
+          <div className="hero-overlay">
+            <Hero />
+          </div>
+
+          {/* COVER */}
           <img
             src={cover}
             alt="cover"
@@ -35,6 +42,7 @@ const HeroBook: React.FC = () => {
             onClick={() => !open && handleOpen()}
           />
 
+          {/* BACK BUTTON */}
           {showBack && (
             <button className="back-btn" onClick={handleClose}>
               ←
