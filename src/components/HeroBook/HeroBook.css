@@ -1,9 +1,21 @@
 .hero-book {
-  height: 100vh;
+  height: 93vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #0c0c0c;
+}
+
+.click-to-open {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  color: #8c8c8c70;
+  font-size: 14px;
+}
+
+.click-to-open img {
+  margin-top: 10px;
 }
 
 /* container */
@@ -19,7 +31,7 @@
 
 .book {
   position: relative;
-  width: 90%; /* IMPORTANT */
+  width: 95%; /* IMPORTANT */
 }
 
 /* inside page */
@@ -39,10 +51,14 @@
   transform-origin: left;
   transition: transform 1s ease;
   cursor: pointer;
+  z-index: 3;
+
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
 
 .cover-page.open {
-  transform: rotateY(-160deg);
+  transform: rotateY(-180deg);
 }
 
 /* back button */
@@ -128,4 +144,20 @@
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.case-studies-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.case-studies-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  /* border: 1px solid #8c8c8c70; */
+  border-radius: 8px;
+  color: white;
+  font-size: 36px;
 }

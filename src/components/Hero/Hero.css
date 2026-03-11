@@ -113,11 +113,14 @@
   align-items: center;
   gap: 8px;
   padding: 10px 16px;
-  color: white;
-  border: 1px solid white;
+  color: #c4c4c4;
+  border: 1px solid #c4c4c4;
   border-radius: 8px;
   cursor: pointer;
   /* background: linear-gradient(90deg, #0050a8, #067cff, #0050a8); */
   /* background-color: #0074f5; */
   background-color: black;
+}
+.download-resume-btn img {
+  color: #c4c4c4;
 }

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./HeroBook.css";
 
-import cover from "../../assets/cover.png";
+import cover from "../../assets/cover-gopinath.png";
 import inside from "../../assets/inside-page.png";
+import clickArrow from "../../assets/click-arrow.png";
 import Hero from "../Hero/Hero";
 
 const HeroBook: React.FC = () => {
@@ -23,34 +24,46 @@ const HeroBook: React.FC = () => {
   };
 
   return (
-    <section className="hero-book">
-      <div className="book-container">
-        <div className="book">
-          {/* OPENING PAGE IMAGE */}
-          <img src={inside} alt="inside" className="inside-page" />
-
-          {/* HERO CONTENT OVERLAY */}
-          <div className="hero-overlay">
-            <Hero />
-          </div>
-
-          {/* COVER */}
-          <img
-            src={cover}
-            alt="cover"
-            className={`cover-page ${open ? "open" : ""}`}
-            onClick={() => !open && handleOpen()}
-          />
-
-          {/* BACK BUTTON */}
-          {showBack && (
-            <button className="back-btn" onClick={handleClose}>
-              ←
-            </button>
-          )}
+    <>
+      <section className="hero-book">
+        <div className="click-to-open">
+          <img src={clickArrow} alt="click-to-open" className="click-arrow" />
+          <span>{open ? "Click back to close" : "Click to open"}</span>
         </div>
+        <div className="book-container">
+          <div className="book">
+            {/* OPENING PAGE IMAGE */}
+            <img src={inside} alt="inside" className="inside-page" />
+
+            {/* HERO CONTENT OVERLAY */}
+            <div className="hero-overlay">
+              <Hero />
+            </div>
+
+            {/* COVER */}
+            <img
+              src={cover}
+              alt="cover"
+              className={`cover-page ${open ? "open" : ""}`}
+              onClick={() => !open && handleOpen()}
+            />
+
+            {/* BACK BUTTON */}
+            {showBack && (
+              <button className="back-btn" onClick={handleClose}>
+                ←
+              </button>
+            )}
+          </div>
+        </div>
+      </section>
+
+      <div className="case-studies-header-container">
+        <hr style={{ width: "25%" }} />
+        <div className="case-studies-box">MY CASE STUDIES BOOKS</div>
+        <hr style={{ width: "25%" }} />
       </div>
-    </section>
+    </>
   );
 };
 

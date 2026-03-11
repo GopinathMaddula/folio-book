@@ -1,6 +1,7 @@
 .header {
   width: 100%;
   border-bottom: 1px solid #1a1a1a;
+  background-color: black;
 }
 
 .container {
@@ -22,7 +23,7 @@
   color: #7c7c7c;
   text-decoration: none;
   margin-left: 40px;
-  font-size: 14px;
+  font-size: 18px;
   transition: 0.3s;
 }
 

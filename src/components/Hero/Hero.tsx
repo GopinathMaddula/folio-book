@@ -1,6 +1,6 @@
 import profile from "../../assets/profile-right.png";
 import skills from "../../assets/skills.png";
-import download from "../../assets/download.png";
+import download from "../../assets/download-grey.png";
 import "./Hero.css";
 
 const Hero: React.FC = () => {
