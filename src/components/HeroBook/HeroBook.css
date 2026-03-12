@@ -161,3 +161,9 @@
   color: white;
   font-size: 36px;
 }
+.click-to-open-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 90%;
+}

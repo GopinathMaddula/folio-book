@@ -1,0 +1,27 @@
+.kharidh-page {
+  background-color: #1b0514;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.title-1-img {
+  width: 100%;
+}
+.personal-motivation-section {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+}
+.pm-img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .kharidh-page {
+    gap: 10px;
+  }
+  .personal-motivation-section {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+  }
+}

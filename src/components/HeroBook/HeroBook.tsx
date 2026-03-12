@@ -56,12 +56,16 @@ const HeroBook: React.FC = () => {
             )}
           </div>
         </div>
+        <div className="click-to-open-container">
+          <div className="click-to-open" style={{ justifyContent: "end" }}>
+            <img src={clickArrow} alt="click-to-open" className="click-arrow" />
+            <span>Case Studies</span>
+          </div>
+        </div>
       </section>
 
       <div className="case-studies-header-container">
-        <hr style={{ width: "25%" }} />
         <div className="case-studies-box">MY CASE STUDIES BOOKS</div>
-        <hr style={{ width: "25%" }} />
       </div>
     </>
   );
