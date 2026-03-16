@@ -1,9 +1,19 @@
 import profile from "../../assets/profile-right.png";
 import skills from "../../assets/skills.png";
-import download from "../../assets/download-grey.png";
+import resumePdf from "../../assets/images/Gopinath Maddula 4+.pdf";
+
 import "./Hero.css";
 
 const Hero: React.FC = () => {
+  // handle download
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = resumePdf; // or use uploadedPdfPath if you want the direct /mnt/data path
+    link.download = "Gopinath_Maddula_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  };
   return (
     <div className="book-hero">
       <div className="book-hero-text">
@@ -23,8 +33,24 @@ const Hero: React.FC = () => {
             <span>gopinath.maddula173@gmail.com</span>
             <span>+91 9701999902</span>
           </div>
-          <button className="download-resume-btn">
-            <img src={download} alt="Download Resume" />
+          <button className="download-resume-btn" onClick={handleDownload}>
+            <svg
+              className="download-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M12 3v12"></path>
+              <path d="M7 10l5 5 5-5"></path>
+              <path d="M5 21h14"></path>
+            </svg>
+
             <span>DOWNLOAD RESUME</span>
           </button>
         </div>

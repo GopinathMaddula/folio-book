@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
             <img src={git} alt="GitHub Logo" className="footer-icon" />
           </a>
           <a
-            href="https://www.linkedin.com/in/gopinath-maddula-21ab72261/"
+            href="https://www.linkedin.com/in/gopinath-maddula-484b383a3/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
         <div className="footer-info-container">
           <p className="footer-terms">gopinath.maddula173@gmail.com</p>
           <p className="footer-copywright">
-            © 2026 Gopinath Maddula — Designed & coded by me
+            © 2026 Gopinath Maddula — Designed & developed by me
           </p>
         </div>
       </div>

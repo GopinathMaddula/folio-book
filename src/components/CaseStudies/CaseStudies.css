@@ -39,3 +39,8 @@
 .book-card:hover .default {
   opacity: 0;
 }
+.book-card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}

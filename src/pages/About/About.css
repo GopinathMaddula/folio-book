@@ -1,0 +1,157 @@
+.about-page-main-container {
+  padding: 40px 100px;
+}
+.about-heading {
+  /* font-family: "roboto", sans-serif; */
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+.about-description {
+  /* font-family: "roboto", sans-serif; */
+  font-size: 24px;
+  color: #ffffff99;
+  line-height: 50px;
+  letter-spacing: 1px;
+}
+.highlighter {
+  color: #5494ed;
+}
+.work-experience-head-container {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff99;
+  gap: 10px;
+  /* font-family: "roboto", sans-serif; */
+}
+.work-experience-about-heading {
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: #ffffff;
+}
+.edp-head {
+  font-family: "Righteous", sans-serif;
+  color: #ebff00;
+  font-weight: normal;
+  font-size: 32px;
+}
+.nano-img {
+  width: 20%;
+}
+.nano-head {
+  font-family: "inter", sans-serif;
+  color: #ff7739;
+  font-weight: bold;
+  font-size: 32px;
+}
+.services {
+  color: white;
+}
+.duration {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.dur-period {
+  font-weight: normal;
+  color: white;
+  margin-left: 8px;
+}
+.edpedia-description {
+  /* line-height: 25px; */
+  margin-top: 0px;
+}
+.about-work-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 80%;
+}
+.work-experience-all-container {
+  display: flex;
+  gap: 50px;
+  font-size: 24px;
+  line-height: 50px;
+  letter-spacing: 1px;
+}
+.designation {
+  color: #5494ed;
+  font-size: 24px;
+}
+.edpedia-description {
+  margin-top: 10px;
+}
+.c-two-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+@media (max-width: 990px) {
+  .work-experience-all-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-work-experience {
+    width: fit-content;
+  }
+}
+@media (max-width: 760px) {
+  .work-experience-all-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-page-main-container {
+    padding: 40px;
+  }
+  .about-heading {
+    font-size: 28px;
+  }
+  .about-description {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .work-experience-all-container {
+    gap: 20px;
+  }
+  .work-experience-about-heading {
+    font-size: 28px;
+  }
+}
+@media (max-width: 560px) {
+  .about-page-main-container {
+    padding: 20px;
+  }
+  .about-heading {
+    font-size: 24px;
+  }
+  .about-description {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .work-experience-all-container {
+    gap: 20px;
+  }
+  .work-experience-about-heading {
+    font-size: 24px;
+  }
+}
+.work-experience-container {
+  background-color: #5494ed13;
+  border-radius: 30px;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  gap: 20px; /* spacing between items */
+  flex-wrap: wrap; /* allow wrapping on medium screens */
+}
+.about-work-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}

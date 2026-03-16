@@ -108,7 +108,7 @@
   color: #c4c4c4;
 }
 .download-resume-btn {
-  font-family: "aldrich", sans-serif;
+  font-family: "Aldrich", sans-serif;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -117,9 +117,35 @@
   border: 1px solid #c4c4c4;
   border-radius: 8px;
   cursor: pointer;
-  /* background: linear-gradient(90deg, #0050a8, #067cff, #0050a8); */
-  /* background-color: #0074f5; */
   background-color: black;
+
+  transition: all 0.3s ease;
+}
+
+/* icon */
+
+.download-resume-btn img {
+  transition: transform 0.3s ease;
+}
+
+/* hover animation */
+
+.download-resume-btn:hover {
+  color: #5494ed;
+  border-color: #5494ed;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(84, 148, 237, 0.25);
+}
+
+.download-resume-btn:hover img {
+  transform: translateY(2px);
+}
+
+/* click animation */
+
+.download-resume-btn:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 .download-resume-btn img {
   color: #c4c4c4;

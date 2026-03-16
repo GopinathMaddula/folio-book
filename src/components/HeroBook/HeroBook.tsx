@@ -65,7 +65,7 @@ const HeroBook: React.FC = () => {
       </section>
 
       <div className="case-studies-header-container">
-        <div className="case-studies-box">MY CASE STUDIES BOOKS</div>
+        <div className="case-studies-box">MY CASE STUDY BOOKS</div>
       </div>
     </>
   );
