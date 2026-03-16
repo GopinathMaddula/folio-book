@@ -1,13 +1,12 @@
-import React from "react";
 import "./Edpedia.css";
 
 const Edpedia = () => {
   const handleRequestAccess = () => {
     const subject = encodeURIComponent(
-      "Requesting Access to Locked Case Study"
+      "Requesting Access to Locked Case Study",
     );
     const body = encodeURIComponent(
-      `Hi,\n\nI would like to request access to view this locked case study. Please let me know the process.\n\nRegards,\n[Your Name]`
+      `Hi,\n\nI would like to request access to view this locked case study. Please let me know the process.\n\nRegards,\n[Your Name]`,
     );
     window.location.href = `mailto:gopinath.maddula173@gmail.com?subject=${subject}&body=${body}`;
   };
