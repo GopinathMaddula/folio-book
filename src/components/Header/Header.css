@@ -17,6 +17,10 @@
   color: white;
   font-size: 22px;
   letter-spacing: 2px;
+  text-decoration: none !important;
+}
+.logo-link:hover {
+  color: #5494ed;
 }
 
 .nav a {

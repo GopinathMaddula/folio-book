@@ -8,7 +8,7 @@ import r3 from "../../assets/images/r3.png";
 // @ts-ignore: allow importing image asset without a module declaration (add a *.png d.ts later)
 import downloadIcon from "../../assets/images/download.svg";
 // @ts-ignore: allow importing image asset without a module declaration (add a *.png d.ts later)
-import resumePdf from "../../assets/images/Gopinath Maddula 4+.pdf";
+import resumePdf from "../../assets/images/Gopinath 4+ nano tech.pdf";
 // import download from "../../assets/download-grey.png";
 
 import "./Resume.css";
