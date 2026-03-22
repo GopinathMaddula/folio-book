@@ -8,7 +8,7 @@ import r3 from "../../assets/images/r3.png";
 // @ts-ignore: allow importing image asset without a module declaration (add a *.png d.ts later)
 import downloadIcon from "../../assets/images/download.svg";
 // @ts-ignore: allow importing image asset without a module declaration (add a *.png d.ts later)
-import resumePdf from "../../assets/images/Gopinath 4+ nano tech.pdf";
+import resumePdf from "../../assets/Gopinath madul tech resume.pdf";
 // import download from "../../assets/download-grey.png";
 
 import "./Resume.css";
@@ -46,7 +46,7 @@ const Resume: React.FC = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resumePdf; // or use uploadedPdfPath if you want the direct /mnt/data path
-    link.download = "Gopinath_Maddula_Resume.pdf";
+    link.download = "Gopinath madul tech resume.pdf";
     document.body.appendChild(link);
     link.click();
     link.remove();

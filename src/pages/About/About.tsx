@@ -4,6 +4,8 @@ import aboutMe from "../../assets/images/About me.svg";
 // @ts-ignore: allow importing image asset without a module declaration (add a *.png d.ts later)
 import f1s from "../../assets/images/F1Studioz 1.png";
 import nano from "../../assets/nano.png";
+import madul from "../../assets/madul-logo.png";
+import lince from "../../assets/lince-logo.jpg";
 
 import "./About.css";
 import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
@@ -98,10 +100,44 @@ const About: React.FC = () => {
             </p>
           </div> */}
           <div className="work-experience-container about-work-experience">
-            <img src={nano} alt="Nano Tech E Services" className="nano-img" />
-            <span className="designation">UX/UI Designer & Developer</span>
+            {/* <img src={nano} alt="Nano Tech E Services" className="nano-img" /> */}
+            <div className="companies-container">
+              <div className="cards-container">
+                <div className="card">
+                  <img src={madul} alt="madul" className="card-img madul-img" />
+                  <div className="vertical-line"></div>
+                  <div className="card-content">
+                    <h1>Madul Tech Software Pvt. Ltd</h1>
+                    <p>Nov 2024 – Feb 2026</p>
+                    <span>UI/UX Designer</span>
+                  </div>
+                </div>
+
+                <div className="card">
+                  <img src={f1s} alt="F1S" className="card-img f1s-img" />
+                  <div className="vertical-line"></div>
+                  <div className="card-content">
+                    <h1>F1Studioz</h1>
+                    <p>Nov 2022 – Oct 2024</p>
+                    <span>UI Engineer</span>
+                  </div>
+                </div>
+
+                <div className="card">
+                  <img src={lince} alt="Lince" className="card-img lince-img" />
+                  <div className="vertical-line"></div>
+                  <div className="card-content">
+                    <h1>Lince Soft Solutions Pvt. Ltd</h1>
+                    <p>Aug 2021 – Jul 2022</p>
+                    <span>UI/UX Designer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* <span className="designation">UX/UI Designer & Developer</span> */}
             <span className="duration">
-              Experience: <span className="dur-period">4+ Years</span>
+              Total Experience: <span className="dur-period">4+ Years</span>
             </span>
             <hr style={{ width: "100%", opacity: 0.2 }} />
 
