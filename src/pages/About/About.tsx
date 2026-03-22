@@ -3,7 +3,7 @@ import React from "react";
 import aboutMe from "../../assets/images/About me.svg";
 // @ts-ignore: allow importing image asset without a module declaration (add a *.png d.ts later)
 import f1s from "../../assets/images/F1Studioz 1.png";
-import nano from "../../assets/nano.png";
+// import nano from "../../assets/nano.png";
 import madul from "../../assets/madul-logo.png";
 import lince from "../../assets/lince-logo.jpg";
 
