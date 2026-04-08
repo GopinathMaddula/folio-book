@@ -44,3 +44,7 @@
   display: block;
   text-decoration: none;
 }
+.book-disabled {
+  cursor: not-allowed;
+  opacity: 1;
+}

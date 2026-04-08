@@ -5,6 +5,7 @@ import ecf from "../../assets/ecf-book.png";
 import ecfHover from "../../assets/ecf-book-hover.png";
 import kharidh from "../../assets/kharidh-book.png";
 import kharidhHover from "../../assets/kharidh-book-hover.png";
+import snapSelect from "../../assets/snapselect.png";
 
 const CaseStudies: React.FC = () => {
   return (
@@ -25,8 +26,12 @@ const CaseStudies: React.FC = () => {
         </Link>
 
         <div className="book-card">
-          <img className="book-img default" src={ecf} alt="ECF Book" />
-          <img className="book-img hover" src={ecfHover} alt="ECF Hover" />
+          <img
+            className="book-img book-disabled"
+            src={snapSelect}
+            alt="ECF Book"
+          />
+          {/* <img className="book-img hover" src={ecfHover} alt="ECF Hover" /> */}
         </div>
       </div>
     </div>
