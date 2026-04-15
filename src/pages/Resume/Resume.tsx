@@ -8,7 +8,7 @@ import r3 from "../../assets/images/r3.png";
 // @ts-ignore: allow importing image asset without a module declaration (add a *.png d.ts later)
 import downloadIcon from "../../assets/images/download.svg";
 // @ts-ignore: allow importing image asset without a module declaration (add a *.png d.ts later)
-import resumePdf from "../../assets/Gopinath madul tech resume.pdf";
+import resumePdf from "../../assets/Gopinath c madul tech resume.pdf";
 // import download from "../../assets/download-grey.png";
 
 import "./Resume.css";
@@ -22,7 +22,7 @@ import "./Resume.css";
  */
 
 const Resume: React.FC = () => {
-  const [viewerOpen, setViewerOpen] = useState(false);
+  const [viewerOpen, setViewerOpen] = useState(true);
   const viewerRef = useRef<HTMLDivElement | null>(null);
 
   // lock body scroll when viewer open
@@ -43,25 +43,27 @@ const Resume: React.FC = () => {
   }, []);
 
   // handle download
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = resumePdf; // or use uploadedPdfPath if you want the direct /mnt/data path
-    link.download = "Gopinath madul tech resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-  };
+  // const handleDownload = () => {
+  //   const link = document.createElement("a");
+  //   link.href = resumePdf;
+  //   link.download = "Gopinath madul tech resume.pdf";
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   link.remove();
+  // };
 
   // close when clicking backdrop
-  const onBackdropClick = (e: React.MouseEvent) => {
-    if (e.target === e.currentTarget) setViewerOpen(false);
-  };
+  // const onBackdropClick = (e: React.MouseEvent) => {
+  //   if (e.target === e.currentTarget) setViewerOpen(false);
+  // };
 
   return (
     <main className="resume-main-page">
-      <div className="resume-main-content">
-        <div className={`resume-page ${viewerOpen ? "blurred" : ""}`}>
-          {/* border + expand icon wrapper */}
+      <div
+        className="resume-main-content"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
+        {/* <div className={`resume-page ${viewerOpen ? "blurred" : ""}`}>
           <div className="resume-preview">
             <button
               className="expand-btn"
@@ -69,7 +71,6 @@ const Resume: React.FC = () => {
               title="Open resume"
               onClick={() => setViewerOpen(true)}
             >
-              {/* simple expand icon (SVG) */}
               <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden>
                 <path
                   d="M9 3H5a2 2 0 0 0-2 2v4M15 3h4a2 2 0 0 1 2 2v4M9 21H5a2 2 0 0 1-2-2v-4M15 21h4a2 2 0 0 0 2-2v-4"
@@ -82,7 +83,6 @@ const Resume: React.FC = () => {
               </svg>
             </button>
 
-            {/* Images / thumbnails */}
             <div className="resume-thumbs">
               <img src={r1} alt="img 1" />
               <img src={r2} alt="img 2" />
@@ -92,9 +92,7 @@ const Resume: React.FC = () => {
         </div>
 
         <div className="resume-download-btn-container">
-          {/* <button className="resume-view-btn" onClick={handleDownload}>
-            DOWNLOAD MY RESUME <img src={downloadIcon} alt="download" />
-          </button> */}
+          
           <button className="download-resume-btn" onClick={handleDownload}>
             <svg
               className="download-icon"
@@ -115,55 +113,48 @@ const Resume: React.FC = () => {
 
             <span>DOWNLOAD RESUME</span>
           </button>
+        </div> */}
+
+        <div
+          className="resume-viewer"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Resume preview"
+          ref={viewerRef}
+        >
+          <div className="viewer-header">
+            <div className="viewer-title">Resume — Gopinath Maddula</div>
+            <div className="viewer-actions">
+              <a
+                className="viewer-download-link"
+                href={resumePdf}
+                download="Gopinath_Maddula_Resume.pdf"
+              >
+                Download
+              </a>
+              {/* <button
+                className="viewer-close"
+                aria-label="Close resume preview"
+                onClick={() => setViewerOpen(false)}
+              >
+                ✕
+              </button> */}
+            </div>
+          </div>
+
+          <div className="viewer-body">
+            {/* Use the imported resumePdf URL. If you prefer direct server path, replace src with that path. */}
+            <iframe
+              src={resumePdf}
+              title="Resume PDF"
+              className="resume-iframe"
+              frameBorder={0}
+            />
+          </div>
         </div>
       </div>
 
       {/* Viewer modal */}
-      {viewerOpen && (
-        <div
-          className="resume-viewer-backdrop"
-          onClick={onBackdropClick}
-          role="presentation"
-        >
-          <div
-            className="resume-viewer"
-            role="dialog"
-            aria-modal="true"
-            aria-label="Resume preview"
-            ref={viewerRef}
-          >
-            <div className="viewer-header">
-              <div className="viewer-title">Resume — Gopinath Maddula</div>
-              <div className="viewer-actions">
-                <a
-                  className="viewer-download-link"
-                  href={resumePdf}
-                  download="Gopinath_Maddula_Resume.pdf"
-                >
-                  Download
-                </a>
-                <button
-                  className="viewer-close"
-                  aria-label="Close resume preview"
-                  onClick={() => setViewerOpen(false)}
-                >
-                  ✕
-                </button>
-              </div>
-            </div>
-
-            <div className="viewer-body">
-              {/* Use the imported resumePdf URL. If you prefer direct server path, replace src with that path. */}
-              <iframe
-                src={resumePdf}
-                title="Resume PDF"
-                className="resume-iframe"
-                frameBorder={0}
-              />
-            </div>
-          </div>
-        </div>
-      )}
     </main>
   );
 };

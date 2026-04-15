@@ -108,7 +108,7 @@ const About: React.FC = () => {
                   <div className="vertical-line"></div>
                   <div className="card-content">
                     <h1>Madul Tech Software Pvt. Ltd</h1>
-                    <p>Nov 2024 – Feb 2026</p>
+                    <p>Nov 2024 – Mar 2026</p>
                     <span>UI/UX Designer</span>
                   </div>
                 </div>
