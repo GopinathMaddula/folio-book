@@ -198,6 +198,9 @@
   height: 100%;
   background-color: #e5e5e5;
 }
+.card-content {
+  line-height: 30px;
+}
 
 .card-content h1 {
   font-size: 16px;
@@ -207,21 +210,21 @@
 }
 
 .card-content p {
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff99;
   margin: 0px;
 }
 
 .card-content span {
-  font-size: 24px;
+  font-size: 20px;
   color: #555;
 }
 .madul-img {
-  width: 158px;
-  /* height: auto; */
+  width: 30%;
+  height: auto;
 }
 .f1s-img {
-  width: 175px;
+  width: 35%;
   height: auto;
 }
 .lince-img {
