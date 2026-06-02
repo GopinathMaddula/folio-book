@@ -1,6 +1,6 @@
 import profile from "../../assets/profile-right.png";
-import skills from "../../assets/skills.png";
-import resumePdf from "../../assets/Gopinath c madul tech resume.pdf";
+import skills from "../../assets/skills-1.png";
+import resumePdf from "../../assets/Gopinath f1studioz resume.pdf";
 
 import "./Hero.css";
 

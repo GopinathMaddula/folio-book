@@ -161,13 +161,13 @@
 .cards-container {
   display: flex;
   gap: 24px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .card {
   height: 180px;
   /* width: 220px; */
-  width: 100%;
+  /* width: 100%; */
   border: 1px solid #e5e5e5;
   border-radius: 16px;
   overflow: hidden;
@@ -194,16 +194,16 @@
 }
 
 .vertical-line {
-  width: 1px;
-  height: 100%;
-  background-color: #e5e5e5;
+  width: 2px;
+  height: 80%;
+  background-color: #1f1f1f;
 }
 .card-content {
   line-height: 30px;
 }
 
 .card-content h1 {
-  font-size: 16px;
+  font-size: 24px;
   color: #ffffff;
   margin: 0px;
   font-weight: 100;
@@ -222,6 +222,7 @@
 .madul-img {
   width: 30%;
   height: auto;
+  border-radius: 12px;
 }
 .f1s-img {
   width: 35%;
