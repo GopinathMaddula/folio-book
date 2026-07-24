@@ -8,7 +8,8 @@ import r3 from "../../assets/images/r3.png";
 // @ts-ignore: allow importing image asset without a module declaration (add a *.png d.ts later)
 import downloadIcon from "../../assets/images/download.svg";
 // @ts-ignore: allow importing image asset without a module declaration (add a *.png d.ts later)
-import resumePdf from "../../assets/Gopinath f1studioz resume.pdf";
+// import resumePdf from "../../assets/Gopinath f1studioz resume.pdf";
+import resumePdf from "../../assets/Gopinath madul tech resume.pdf";
 // import download from "../../assets/download-grey.png";
 
 import "./Resume.css";
@@ -16,7 +17,7 @@ import "./Resume.css";
 /**
  * If you have an uploaded file on the server/dev machine and want to use that path directly,
  * you can also fallback to a local path like:
- * const uploadedPdfPath = "/mnt/data/Gopinath f1studioz resume.pdf";
+ * const uploadedPdfPath = "/mnt/data/Gopinath madul tech resume.pdf";
  *
  * Then use uploadedPdfPath in the iframe `src` if needed instead of `resumePdf`.
  */

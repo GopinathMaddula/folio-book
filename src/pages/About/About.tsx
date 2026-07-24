@@ -4,8 +4,8 @@ import aboutMe from "../../assets/images/About me.svg";
 // @ts-ignore: allow importing image asset without a module declaration (add a *.png d.ts later)
 import f1s from "../../assets/images/F1Studioz 1.png";
 // import nano from "../../assets/nano.png";
-// import madul from "../../assets/madul-logo.png";
-import freelancer from "../../assets/Freelancer-logo.svg";
+import madul from "../../assets/madul-logo.png";
+// import freelancer from "../../assets/Freelancer-logo.svg";
 // import lince from "../../assets/lince-logo.jpg";
 
 import "./About.css";
@@ -106,6 +106,23 @@ const About: React.FC = () => {
               <div className="cards-container">
                 <div className="card">
                   <img
+                    src={madul}
+                    alt="Madul Tech Software Pvt. Ltd"
+                    className="card-img madul-img"
+                  />
+                  <div className="vertical-line"></div>
+                  <div
+                    className="card-content"
+                    // style={{ width: "280px" }}
+                  >
+                    <h1>Madul Tech Software Pvt. Ltd</h1>
+                    <p>Nov 2024 – June 2026</p>
+                    <span>UI/UX Designer</span>
+                  </div>
+                </div>
+
+                {/* <div className="card">
+                  <img
                     src={freelancer}
                     alt="Freelancer"
                     className="card-img madul-img"
@@ -116,7 +133,7 @@ const About: React.FC = () => {
                     <p>Nov 2024 – Mar 2026</p>
                     <span>UI/UX Designer</span>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="card">
                   <img src={f1s} alt="F1S" className="card-img f1s-img" />
@@ -142,7 +159,7 @@ const About: React.FC = () => {
 
             {/* <span className="designation">UX/UI Designer & Developer</span> */}
             <span className="duration">
-              Total Experience: <span className="dur-period">3+ Years</span>
+              Total Experience: <span className="dur-period">4+ Years</span>
             </span>
             <hr style={{ width: "100%", opacity: 0.2 }} />
 
